@@ -1,4 +1,4 @@
-package Lesson5.Question1;
+package lesson5.question1;
 
 public class DeptEmployee {
 
