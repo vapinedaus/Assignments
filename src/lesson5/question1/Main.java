@@ -2,7 +2,6 @@ package lesson5.question1;
 
 import java.text.DecimalFormat;
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class Main {
@@ -14,6 +13,7 @@ public class Main {
 		boolean isShowSec= false;
 		boolean isAll = false;
 		
+		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		System.out.println("Do you want to see the sum of overall salary?  Y/N");
 	    isAll = in.next().toUpperCase().equals("Y")? true: false;
@@ -65,16 +65,7 @@ public class Main {
 	   
 	   
 	   System.out.println("\n\nThe sum of all salaries is  " + df.format(sum) );
-	   
-
-	/*
-		
 	
-	
-		
-		department[3] = new Secretary ();
-		department[4] = new Secretary ();
-		*/
 	}
 
 }
