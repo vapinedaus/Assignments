@@ -1,8 +1,5 @@
 package lesson5.question3;
 
-import lesson5.question2.Computer;
-import lesson5.question2.Notebook;
-
 public class Driver {
 
 	public static void main(String[] args) {
