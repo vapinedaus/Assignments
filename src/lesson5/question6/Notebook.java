@@ -1,6 +1,6 @@
 package lesson5.question6;
 
-public class Notebook extends Computer {
+public class Notebook extends Computer implements Cloneable  {
 
 	double height;
 	double width;
@@ -59,5 +59,15 @@ public class Notebook extends Computer {
 		hash = (int) (11 * hash + manufacturer.hashCode() + processor.hashCode() + ramSize + diskSize +processorSpeed + height + width + weight);
 		return hash;
 	}
+	
+	  public Object clone() throws CloneNotSupportedException {
+
+		  Notebook clone=(Notebook)super.clone();
+		   clone.height =  this.height; //this.height.clone();
+		   clone.width =  this.width;
+		   clone.weight = this.weight;
+		    return clone;
+
+		  }
 	
 }
