@@ -1,7 +1,7 @@
 package lesson5.question4;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
+
+import java.util.Scanner;
 
 public class Manager implements Employee {
 
@@ -12,27 +12,34 @@ public class Manager implements Employee {
 	public Manager() {
 		
 	}
-	
-	Manager(int numberOfHoursPerMonth, int numberOfYearsOfWork) {
-		
-		this.numberOfHoursPerMonth =  numberOfHoursPerMonth;
-		this.numberOfYearsOfWork = numberOfYearsOfWork;
-		
-	
-	}
 
-
-	public void getEmpolyeeDetails(String employeeName, int employeeId,
-			int socialSecurityNumber, Date dateofBirth, String Address) {
+	public void getEmpolyeeDetails() {
+		@SuppressWarnings("resource")
+		Scanner in = new Scanner(System.in);
+		String[] cointaner = new String[5];
+		System.out.println("=========Manager Details==========");
+		System.out.println("Enter Name:");
+		cointaner[0] = in.next();
+		System.out.println("Enter Employee ID:");
+		cointaner[1] = in.next();
+		System.out.println("Enter SSN:");
+		cointaner[2] = in.next();
+		System.out.println("Enter Birth Date (yyyy-MM-dd):");
+		cointaner[3] = in.next();
+		System.out.println("Address:");
+		cointaner[4] = in.next();
+		System.out.println("Number Of Hours Per Month:");
+		this.numberOfHoursPerMonth  = in.nextInt();
+		System.out.println("Number Of Years Working:");
+		this.numberOfYearsOfWork = in.nextInt();
 		
-		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-		System.out.println("Position: Manager "
-				+ "\nName: " + employeeName  
-				+ "\nEmployee ID: " +  	employeeId 
-				+ "\nSSN: " + socialSecurityNumber
-				+ "\nDate of Birth: " + formatter.format(dateofBirth)
-				+ "\nAddress: " + Address
-				+ "\nNumber of years working:" + numberOfYearsOfWork);
+		
+		System.out.println("Name: " + cointaner[0]  
+				+ "\nEmployee ID: " +  	cointaner[1] 
+				+ "\nSSN: " + cointaner[2]
+				+ "\nDate of Birth: " + cointaner[3]
+				+ "\nAddress: " + cointaner[4]
+				+ "\nNumber of years working:" + this.numberOfYearsOfWork);
 		
 	}
 
