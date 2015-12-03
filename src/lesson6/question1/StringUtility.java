@@ -79,9 +79,9 @@ public class StringUtility {
         btnReverse.addActionListener(
         		new ActionListener() 
         		{
-
+ 
 					@Override
-					public void actionPerformed(ActionEvent e) {
+	 				public void actionPerformed(ActionEvent e) {
 						
 						txtOutput.setText(String.valueOf(reverse(txtInput.getText())));
 					}

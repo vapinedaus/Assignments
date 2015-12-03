@@ -1,5 +1,5 @@
 package lesson6.question2;
-
+ 
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Dimension;
@@ -147,7 +147,7 @@ public class RainbowColorFrame extends JFrame {
 			 btnViolet.setLayout(new GridLayout(3,2));
 			 btnViolet.setBackground(new Color(159, 0, 255));
 			 add(btnViolet);
-			 btnViolet.addActionListener(
+			 btnViolet.addActionListener( 
 					 new ActionListener()
 					 { 
 						 @Override
