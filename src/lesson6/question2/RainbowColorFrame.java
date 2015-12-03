@@ -22,7 +22,7 @@ public class RainbowColorFrame extends JFrame {
 	   JButton btnViolet= new JButton();
 	 public RainbowColorFrame() {
 		    setTitle("Rainbow Color Frame");
-			setBounds(0,0,720,150);
+			setBounds(0,0,755,155);
 			setLocation(300, 200);
 			setLayout(new FlowLayout(FlowLayout.LEFT));
 			
