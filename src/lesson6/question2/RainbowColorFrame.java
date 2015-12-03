@@ -24,7 +24,7 @@ public class RainbowColorFrame extends JFrame {
 		    setTitle("Rainbow Color Frame");
 			setBounds(0,0,720,150);
 			setLocation(300, 200);
-			setLayout(new FlowLayout(0,0,0));
+			setLayout(new FlowLayout(FlowLayout.LEFT));
 			
 
 			
