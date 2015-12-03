@@ -1,5 +1,5 @@
 package lesson6.question2;
- 
+  
 import java.awt.Color; 
 import java.awt.Container;
 import java.awt.Dimension;

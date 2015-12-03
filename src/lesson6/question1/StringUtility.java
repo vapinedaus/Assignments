@@ -1,5 +1,5 @@
 package lesson6.question1; 
-
+ 
 import javax.swing.*;
 
 import java.awt.*;
