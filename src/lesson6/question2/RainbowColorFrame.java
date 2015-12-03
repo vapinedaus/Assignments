@@ -149,7 +149,7 @@ public class RainbowColorFrame extends JFrame {
 			 add(btnViolet);
 			 btnViolet.addActionListener(
 					 new ActionListener()
-					 {
+					 { 
 						 @Override
 						 public void actionPerformed(ActionEvent e)
 						 {

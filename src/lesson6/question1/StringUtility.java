@@ -77,7 +77,7 @@ public class StringUtility {
         frame.add(btnReverse);
         
         btnReverse.addActionListener(
-        		new ActionListener()
+        		new ActionListener() 
         		{
 
 					@Override
