@@ -40,7 +40,7 @@ public class RainbowColorFrame extends JFrame {
 						 public void actionPerformed(ActionEvent e)
 						 {
 							 JButton source = (JButton) e.getSource();
-							 JOptionPane.showMessageDialog(source,"Red signifies passion, vitality, enthusiasm and security", "Color Meaning:", JOptionPane.INFORMATION_MESSAGE);
+							 JOptionPane.showMessageDialog(source,"Red signifies passion, vitality, enthusiasm and security", "Color Meaning", JOptionPane.INFORMATION_MESSAGE);
 								
 						 }
 					 }
@@ -59,7 +59,7 @@ public class RainbowColorFrame extends JFrame {
 						 public void actionPerformed(ActionEvent e)
 						 {
 							 JButton source = (JButton) e.getSource();
-							 JOptionPane.showMessageDialog(source,"Orange signifies creativity, playfulness, exploration on a practical level and relief from boredom", "Color Meaning:", JOptionPane.INFORMATION_MESSAGE);
+							 JOptionPane.showMessageDialog(source,"Orange signifies creativity, playfulness, exploration on a practical level and relief from boredom", "Color Meaning", JOptionPane.INFORMATION_MESSAGE);
 								
 						 }
 					 }
@@ -77,7 +77,7 @@ public class RainbowColorFrame extends JFrame {
 						 public void actionPerformed(ActionEvent e)
 						 {
 							 JButton source = (JButton) e.getSource();
-							 JOptionPane.showMessageDialog(source,"Green signifies harmony, sympathy, health and abundance", "Color Meaning:", JOptionPane.INFORMATION_MESSAGE);
+							 JOptionPane.showMessageDialog(source,"Green signifies harmony, sympathy, health and abundance", "Color Meaning", JOptionPane.INFORMATION_MESSAGE);
 								
 						 }
 					 }
@@ -96,7 +96,7 @@ public class RainbowColorFrame extends JFrame {
 						 public void actionPerformed(ActionEvent e)
 						 {
 							 JButton source = (JButton) e.getSource();
-							 JOptionPane.showMessageDialog(source,"Blue signifies peace and understanding, sympathy and relax", "Color Meaning:", JOptionPane.INFORMATION_MESSAGE);
+							 JOptionPane.showMessageDialog(source,"Blue signifies peace and understanding, sympathy and relax", "Color Meaning", JOptionPane.INFORMATION_MESSAGE);
 								
 						 }
 					 }
@@ -114,7 +114,7 @@ public class RainbowColorFrame extends JFrame {
 						 public void actionPerformed(ActionEvent e)
 						 {
 							 JButton source = (JButton) e.getSource();
-							 JOptionPane.showMessageDialog(source,"Yellow signifies clarity of thought, orderliness and memory improvement", "Color Meaning:", JOptionPane.INFORMATION_MESSAGE);
+							 JOptionPane.showMessageDialog(source,"Yellow signifies clarity of thought, orderliness and memory improvement", "Color Meaning", JOptionPane.INFORMATION_MESSAGE);
 								
 						 }
 					 }
@@ -132,7 +132,7 @@ public class RainbowColorFrame extends JFrame {
 						 public void actionPerformed(ActionEvent e)
 						 {
 							 JButton source = (JButton) e.getSource();
-							 JOptionPane.showMessageDialog(source,"Indigo signifies self-mastery, intuition and spiritual attainment", "Color Meaning:", JOptionPane.INFORMATION_MESSAGE);
+							 JOptionPane.showMessageDialog(source,"Indigo signifies self-mastery, intuition and spiritual attainment", "Color Meaning", JOptionPane.INFORMATION_MESSAGE);
 								
 						 }
 					 }
@@ -151,7 +151,7 @@ public class RainbowColorFrame extends JFrame {
 						 public void actionPerformed(ActionEvent e)
 						 {
 							 JButton source = (JButton) e.getSource();
-							 JOptionPane.showMessageDialog(source,"Violet signifies sorrow, idealism and brings love for humanity", "Color Meaning:", JOptionPane.INFORMATION_MESSAGE);
+							 JOptionPane.showMessageDialog(source,"Violet signifies sorrow, idealism and brings love for humanity", "Color Meaning", JOptionPane.INFORMATION_MESSAGE);
 								
 						 }
 					 }
