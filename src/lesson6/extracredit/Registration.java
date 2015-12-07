@@ -1,4 +1,4 @@
-package lesson7.extracredit;
+package lesson6.extracredit;
 
 
 import java.awt.*;
