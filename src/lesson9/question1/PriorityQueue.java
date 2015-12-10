@@ -1,5 +1,8 @@
 package lesson9.question1;
 
+import lesson8.question3.MyStringLinkedList.Node;
+import lesson8.question4.Directory;
+
 
 
 class PriorityQueueOuter  {
@@ -28,45 +31,59 @@ class PriorityQueueOuter  {
 				else
 				// queue contains 2 or more items
 				{ 
+					
+					//insert Last
+					Node temp = front;
+					while (temp.next != null)
+						temp = temp.next;
+					Node n = new Node(item);
+					temp.next = n;
+					//rear = n;
+					
+					Integer minimum = 0;
 					Node tempNew = null ;
 					Node tempx = front;
-					for (int x =0 ; x <= count; x++)
-					{
+					while (tempx != null) {
 						
 						Node tempy = front;
-						Integer minimum = -1;
-						for (int y =0 ; y<=count; y++)
-						{
-							if (tempy.data > item)
-							{
-								minimum = item;
-							}
-		
+						while (tempy != null) {
+						   if (tempx.data > tempy.data)
+						   {
+							   minimum =  tempy.data;
+							   //http://crunchify.com/java-bubble-sort-algorithm-ascending-order-sample/
+							   Node = temp
+							   temp=arr[j-1];
+			                    arr[j-1] = arr[j];
+			                    arr[j] = temp;
+							   
+							   
+							   if ( tempNew == null)
+								{
+									tempNew = new Node(minimum);
+								}
+								else
+								{
+									tempNew = tempNew.next;
+									tempNew = new Node(minimum);
+									
+								}
+						   }
+						   
+							
 							tempy = tempy.next;
 							
 						}
 						
-						if (minimum != -1)
-						{
-							if (tempNew == null)
-							{
-								tempNew =new Node(minimum);
-								front  = tempNew;
-								rear =   tempNew;
-							}
-							else
-							{
-								tempNew = tempNew.next;
-								tempNew = new Node(minimum);
-								rear = tempNew;
-							}
-						}
+						
 						
 						tempx = tempx.next;
 					}
 					
+					
+					
 
-				
+					front  = tempNew;
+					//rear =   tempNew;
 
 				}
 					count++;
