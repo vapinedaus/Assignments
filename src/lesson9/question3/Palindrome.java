@@ -9,7 +9,6 @@ public class Palindrome {
 		
 		System.out.println("MAX -->"+ isPalindrome("MAX"));
 		System.out.println("YYY0YYY -->"+ isPalindrome("YYY0YYY"));
-		System.out.println("GHFGGGSA -->"+ isPalindrome("GHFGGGSA"));
 
 	}
 	
