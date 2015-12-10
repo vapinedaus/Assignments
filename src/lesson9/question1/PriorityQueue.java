@@ -1,10 +1,5 @@
 package lesson9.question1;
 
-import lesson8.question3.MyStringLinkedList.Node;
-import lesson8.question4.Directory;
-
-
-
 class PriorityQueueOuter  {
 
 	class Node 
@@ -35,69 +30,56 @@ class PriorityQueueOuter  {
 					//insert Last
 					Node temp = front;
 					while (temp.next != null)
+					{
 						temp = temp.next;
-					Node n = new Node(item);
-					temp.next = n;
-					//rear = n;
-					
-					Integer minimum = 0;
-					Node tempNew = null ;
-					Node tempx = front;
-					while (tempx != null) {
-						
-						Node tempy = front;
-						while (tempy != null) {
-						   if (tempx.data > tempy.data)
-						   {
-							   minimum =  tempy.data;
-							   //http://crunchify.com/java-bubble-sort-algorithm-ascending-order-sample/
-							   Node = temp
-							   temp=arr[j-1];
-			                    arr[j-1] = arr[j];
-			                    arr[j] = temp;
-							   
-							   
-							   if ( tempNew == null)
-								{
-									tempNew = new Node(minimum);
-								}
-								else
-								{
-									tempNew = tempNew.next;
-									tempNew = new Node(minimum);
-									
-								}
-						   }
-						   
-							
-							tempy = tempy.next;
-							
-						}
-						
-						
-						
-						tempx = tempx.next;
 					}
+					temp.next = p;
 					
-					
-					
-
-					front  = tempNew;
-					//rear =   tempNew;
+				    // Sort
+					Node tempi = front;
+					int innerCount=  count+1;
+				        for(int i=0; i < innerCount; i++){
+				        	Node tempj = front;
+				            for(int j=1; j < innerCount-i; j++){
+				                if(tempj.next.data < tempj.data){
+				                    int lesserValue =tempj.next.data ;
+				                    tempj.next.data  = tempj.data;
+				                    tempj.data = lesserValue;
+				                }
+				                tempj = tempj.next;
+				            }
+				            tempi = tempi.next;
+				        }
+				    
+				     // get rear
+				        temp = front;
+						while (temp.next != null)
+						{
+							temp = temp.next;
+						}
+						rear = temp;
 
 				}
 					count++;
 					// increment queue size
 		}
 		
-			/*public Object remove()
+			public Integer remove()
 			{ 
 				if(isEmpty())
 				{ System.out.println("Q is empty"); return null; }
-				Object item = front.data;
+				Integer item = front.data;
 				front = front.next;
 				count--;
 				// decrement queue size
+				
+				
+				 // get rear
+		        if (front==null)
+				 {
+		        	rear = null;
+				 }
+				
 				return item;
 			}
 			public boolean isEmpty()
@@ -114,7 +96,7 @@ class PriorityQueueOuter  {
 			{ 
 				return count;
 			}
-			*/
+		
 			public void	display()
 			{ 
 				Node p = front;
@@ -125,30 +107,40 @@ class PriorityQueueOuter  {
 				System.out.print(p.data + " ");
 				p = p.next;
 				}
-				System.out.println();
+				
+				try {
+					System.out.println("---> Rear:" + rear.data);
+				} catch (NullPointerException e) {
+					
+				}
+				
 			}
 		}
 	public class PriorityQueue {
 			public static void main(String[] args) {
 				PriorityQueueOuter q = new PriorityQueueOuter();
-				 //q.display();
 				 q.add(4);
+				 q.add(6);
+				 q.add(5);
 				 q.add(2);
+				 q.display();
+				 System.out.println("Remove(): " + q.remove());
+				 q.display();
+				  System.out.println("peek(): " + q.peek());
 				 q.add(1);
-				 q.add(3);
-				 q.display();
-				 /*System.out.println("Remove(): " + q.remove());
-				 q.display();
-				 System.out.println("peek(): " + q.peek());
-				 q.insert('E');
-				 q.insert('F'); 
+				 q.add(3); 
 				 System.out.println("Remove(): " + q.remove());
 				 q.display();
 				 System.out.println("size(): " + q.size()); 
 				 System.out.println("isEmpty(): " + q.isEmpty());
 				 PriorityQueueOuter q1 = new PriorityQueueOuter(); 
-				 System.out.println("isEmpty(): " + q1.isEmpty());*/
-				
+				 System.out.println("isEmpty(): " + q1.isEmpty());
+				 System.out.println("Remove(): " + q.remove());
+				 System.out.println("Remove(): " + q.remove());
+				 System.out.println("Remove(): " + q.remove());
+				 System.out.println("Remove(): " + q.remove());
+				 q.display();
+				 System.out.println("size(): " + q.size()); 
 		}
 
 
