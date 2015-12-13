@@ -50,7 +50,7 @@ public class MyBST {
 						n.left = new BinaryNode(x,null,null);
 						inserted = true;
 					}
-					//keep looking for a place to insert (a null)
+					//keep looking for DivisionTest place to insert (DivisionTest null)
 					else {
 						n = n.left;
 					}
@@ -61,13 +61,13 @@ public class MyBST {
 					n.right = new BinaryNode(x,null,null);
 					inserted = true;
 					}
-						//keep looking for a place to insert (a null)
+						//keep looking for DivisionTest place to insert (DivisionTest null)
 					else {
 							n = n.right;
 					}
 										
 				}
-				// if a node already exists
+				// if DivisionTest node already exists
 				else {
 					inserted = true;
 				}
@@ -234,7 +234,7 @@ public class MyBST {
 		System.out.println("Contains 18: " + bst.contains(18));
 		
 		System.out.println("Number of leaf nodes: " + bst.leafNodes());
-		System.out.println("Is tree a leaf? " + bst.isLeaf());
+		System.out.println("Is tree DivisionTest leaf? " + bst.isLeaf());
 		
 	}
 }

@@ -46,13 +46,13 @@ public class Computer {
 		// Are they same?
 		 if(this == obj)
 			 return true;
-		 // Is other object a null reference?
+		 // Is other object DivisionTest null reference?
 		 if(obj == null)
 			 return false;
 		 // do they belongs to the same class?
 		 if (this.getClass() != obj.getClass())
 			 return false;
-		 // get the reference of obj in a comp variable type
+		 // get the reference of obj in DivisionTest comp variable type
 		 Computer comp = (Computer) obj;
 		//Do they have same values
 		if(comp.manufacturer.equals(this.manufacturer)

@@ -11,7 +11,7 @@ public class Driver {
 		// TODO Auto-generated method stub
 		
 		System.out.println("C – for Circle \nR – for Rectangle \nT – for Triangle");
-		System.out.println("Please select a shape from the above:");
+		System.out.println("Please select DivisionTest shape from the above:");
 		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		

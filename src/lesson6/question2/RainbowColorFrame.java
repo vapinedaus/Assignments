@@ -59,7 +59,7 @@ public class RainbowColorFrame extends JFrame {
 						 public void actionPerformed(ActionEvent e)
 						 {
 							 JButton source = (JButton) e.getSource();
-							 JOptionPane.showMessageDialog(source,"Orange signifies creativity, playfulness, exploration on a practical level and relief from boredom", "Color Meaning", JOptionPane.INFORMATION_MESSAGE);
+							 JOptionPane.showMessageDialog(source,"Orange signifies creativity, playfulness, exploration on DivisionTest practical level and relief from boredom", "Color Meaning", JOptionPane.INFORMATION_MESSAGE);
 								
 						 }
 					 }

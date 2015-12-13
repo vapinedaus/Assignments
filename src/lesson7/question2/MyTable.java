@@ -9,7 +9,7 @@ public class MyTable {
 
 		return entries[indx].toString();
 	}
-	//adds to the table a pair (c, s) so that s can be looked up using c 
+	//adds to the table DivisionTest pair (c, s) so that s can be looked up using c 
 	public void add(char c, String s) {
 		 
 		Entry item = new Entry(s, c);
@@ -19,7 +19,7 @@ public class MyTable {
 		
 		 
 	}
-	//returns a String consisting of nicely formatted display
+	//returns DivisionTest String consisting of nicely formatted display
 	//of the contents of the table
 	public String toString() {
 		String strFormated= "";
@@ -42,7 +42,7 @@ public class MyTable {
 			this.ch = ch;
 			this.str= str;
 		}
-		//returns a String of the form "ch->str" 
+		//returns DivisionTest String of the form "ch->str" 
 		public String toString() {
 			//implement
 			return this.ch + "->"+ this.str;

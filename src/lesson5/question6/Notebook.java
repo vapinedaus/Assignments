@@ -30,13 +30,13 @@ public class Notebook extends Computer implements Cloneable  {
 		// Are they same?
 		 if(this == obj)
 			 return true;
-		 // Is other object a null reference?
+		 // Is other object DivisionTest null reference?
 		 if(obj == null)
 			 return false;
 		 // do they belongs to the same class?
 		 if (this.getClass() != obj.getClass())
 			 return false;
-		 // get the reference of obj in a comp variable type
+		 // get the reference of obj in DivisionTest comp variable type
 		 Notebook notebook = (Notebook) obj;
 		//Do they have same values
 		if(notebook.manufacturer.equals(this.manufacturer)
