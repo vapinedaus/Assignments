@@ -21,7 +21,7 @@ public String getValue()
 }  // end class DataItem
 ////////////////////////////////////////////////////////////////
 
-//START - LESSON 11 ASSIGNMENT
+//START - 
 class PersonItem{
 	private String mail_id;
 	private String name;
@@ -47,7 +47,7 @@ class PersonItem{
 	}
 	
 }
-//END - LESSON 11 ASSIGNMENT
+//END - 
 
 
 class HashTable
@@ -58,10 +58,10 @@ private DataItem[] hashArray;    // array holds hash table
 private DataItem nonItem;        // for deleted items
 
 
-//START LESSON 11 ASSIGNMENT
+//START 
 private PersonItem[] hashPersonArray;
 private PersonItem delPerson;
-//END LESSON 11 ASSIGNMENT
+//END 
 
 //-------------------------------------------------------------
 public HashTable(int size)       // constructor
@@ -72,10 +72,10 @@ public HashTable(int size)       // constructor
  nonItem = null;   // deleted item key is -1
  
  
-//START LESSON 11 ASSIGNMENT
+//START 
  hashPersonArray = new PersonItem[arraySize];
  delPerson = null;
-//END LESSON 11 ASSIGNMENT 
+//END  
  }
 //-------------------------------------------------------------
 public void displayTable()
@@ -92,7 +92,7 @@ public void displayTable()
  System.out.println("");
  
  */
-	//START LESSON 11 ASSIGNMENT
+	//START 
 	System.out.println("Table: ");
 	 for(int j=0; j<arraySize; j++)
 	    {
@@ -103,21 +103,21 @@ public void displayTable()
 	    }
 	 System.out.println("");
 	 }
-    //END LESSON 11 ASSIGNMENT
+    //END 
 
 //-------------------------------------------------------------
 public int hashFunc(int key)
  {
  return key % arraySize;       // hash function
  }
-//START LESSON 11 ASSIGNMENT
+//START 
 public int hashFunc(String key)
 {
 	return key.hashCode() % arraySize;
 }
-//END LESSON 11 ASSIGNMENT
+//END 
 //-------------------------------------------------------------
-public void insert(int key, String v) // insert DivisionTest DataItem
+public void insert(int key, String v) // insert a DataItem
 //(assumes table not full)
  {
       // extract key
@@ -134,7 +134,7 @@ public void insert(int key, String v) // insert DivisionTest DataItem
  hashArray[hashVal] = obj;    // insert item
  }  // end insert()
 
-//START LESSON 11 ASSIGNMENT
+//START 
 public void insert(String key, String v)
 {
 	int hashVal = hashFunc(key);
@@ -147,9 +147,9 @@ hashVal %= arraySize;
 PersonItem pObj = new PersonItem(key, v);
 hashPersonArray[hashVal] = pObj;
 }
-//END LESSON 11 ASSIGNMENT
+//END 
 //-------------------------------------------------------------
-public DataItem delete(int key)  // delete DivisionTest DataItem
+public DataItem delete(int key)  // delete a DataItem
  {
  int hashVal = hashFunc(key);  // hash the key
 
@@ -167,7 +167,7 @@ public DataItem delete(int key)  // delete DivisionTest DataItem
  return null;                  // can't find item
  }  // end delete()
 
-// START LESSON 11 ASSIGNMENT
+// START 
 public PersonItem delete(String key)
 {
 	int hashVal = hashFunc(key);
@@ -185,7 +185,7 @@ public PersonItem delete(String key)
     }
  return null;                  
 }
-// END LESSON 11 ASSIGNMENT
+// END 
 
 //-------------------------------------------------------------
 public boolean find(int key)    // find item with key
@@ -201,7 +201,7 @@ public boolean find(int key)    // find item with key
     }
  return false;                  // can't find item
  }
- //START LESSON 11 ASSIGNMENT
+ //START 
 public boolean find(String key)
 {
 	int hashVal = hashFunc(key);
@@ -214,7 +214,7 @@ public boolean find(String key)
     }
  return false;                  
 }
- //END LESSON 11 ASSIGNMENT
+ //END 
 
 //-------------------------------------------------------------
 }  // end class HashTable
@@ -234,21 +234,18 @@ String aKey;
                            
  HashTable theHashTable = new HashTable(size);
  
+ theHashTable.insert("man@xyz.com","Molly");
+ theHashTable.insert("abc.def@xyz.com","Polly");
+ theHashTable.insert("wxyz123@edc.com","Sally");
+ theHashTable.insert("asedf@dot.com","Dolly");
 
 
- theHashTable.insert("Zumba@mbc.com","Zumba");
- theHashTable.insert("Zaksa@mbc.com","Zaksa");
- theHashTable.insert("Kudey@edc.com","Kudey");
- theHashTable.insert("Maruo@dot.com","Maruo");
-
- //System.out.println(theHashTable.delete("asedf@dot.com"));
- //theHashTable.displayTable();
  
    while(true)                   // interact with user
     {
     System.out.print("Enter first letter of ");
     System.out.print("show, insert, delete, or find: ");
-    char choice = in.next().charAt(0); //Read DivisionTest Char from the console
+    char choice = in.next().charAt(0); //Read a Char from the console
     switch(choice)
        {
        case 's':
@@ -279,4 +276,5 @@ String aKey;
     }  // end while
  
  }  // end main()
+//--------------------------------------------------------------
 }  // end class HashTableApp
