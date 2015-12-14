@@ -48,7 +48,7 @@ public class CourseHashMap {
 		System.out.println("CS401 is existing? " + hashMap.containsKey("CS401"));
 		
 		System.out.println("hashMap.keySet(): " + hashMap.keySet());
-		System.out.println("hashMap.keySet(): " + hashMap.values());
+		System.out.println("hashMap.values(): " + hashMap.values());
 		
 		hashMap.forEach((cid, course) -> System.out.println(course));
 		
