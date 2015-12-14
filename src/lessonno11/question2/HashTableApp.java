@@ -241,10 +241,10 @@ String aKey;
  theHashTable.insert(7,"SE");
  theHashTable.insert(10,"C#");
  */
- theHashTable.insert("mail_1@xyz.com","Denny");
- theHashTable.insert("abc.def@xyz.com","Allison");
- theHashTable.insert("wxyz123@edc.com","James");
- theHashTable.insert("asedf@dot.com","Grace");
+ theHashTable.insert("Zumba@mbc.com","Zumba");
+ theHashTable.insert("Zaksa@mbc.com","Zaksa");
+ theHashTable.insert("Kudey@edc.com","Kudey");
+ theHashTable.insert("Maruo@dot.com","Maruo");
 
  //System.out.println(theHashTable.delete("asedf@dot.com"));
  //theHashTable.displayTable();
