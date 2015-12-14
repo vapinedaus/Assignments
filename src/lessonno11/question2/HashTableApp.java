@@ -235,12 +235,7 @@ String aKey;
  HashTable theHashTable = new HashTable(size);
  
 
- /*
- theHashTable.insert(1,"FPP");
- theHashTable.insert(5,"Java");
- theHashTable.insert(7,"SE");
- theHashTable.insert(10,"C#");
- */
+
  theHashTable.insert("Zumba@mbc.com","Zumba");
  theHashTable.insert("Zaksa@mbc.com","Zaksa");
  theHashTable.insert("Kudey@edc.com","Kudey");
@@ -284,6 +279,4 @@ String aKey;
     }  // end while
  
  }  // end main()
-//--------------------------------------------------------------
 }  // end class HashTableApp
-////////////////////////////////////////////////////////////////
